@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pr-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lista de contatos</title>
+    <link rel="stylesheet" href="./stylesheet.css">
+</head>
+<body>
+<section>
+    <form id="adicionar">
+        <input type="hidden" name="id">
+        <input type="text" maxlength="40" placeholder="Nome" required>
+        <input type="tel" maxlength="15" placeholder="Telefone" required>
+        <p><input type="submit" name="Salvar" ></p>
+    </form>
+    <div class="lista">
+        <input type="text" placeholder="Pesquisa " onkeyup="listar(this.value)">
+        <ul>
+
+        </ul>
+    </div>
+</section>
+<script src="script.js">  </script>
+</body>
+</html>
